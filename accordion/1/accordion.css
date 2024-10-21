@@ -1,0 +1,27 @@
+body{
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+.accordion {
+  	cursor: pointer;
+  	width: 80%;
+  	height:50vw;
+  	transition: 0.8s;
+}
+#para {
+  	padding:18px;
+  	background-color:aqua;
+  	display: none;
+  	overflow: hidden;
+	width:50%;
+	text-align:center;
+	margin-left:25%;
+}
+.headingSec{
+	padding:10px;
+	cursor:pointer;
+}
+.headingSec:hover{
+	background-color:#f0f0f0;
+}
