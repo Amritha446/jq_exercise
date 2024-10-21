@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Accordion</title>
+	<link rel="stylesheet" href="accordion.css">
+  	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  	<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+  
+</head>
+<body>
+<div id="accordion">
+	<h4 class="headingSec">Section 1</h4>
+	<div id="para">
+		<p>hello world!A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116).
+			 Length and appearance do not determine whether a section in a paper is a paragraph.</p>
+	</div>
+	<h4 class="headingSec">Section 2</h4>
+	<div id="para">
+		<p>hello world!A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116).
+			 Length and appearance do not determine whether a section in a paper is a paragraph.</p>
+	</div>
+	<h4 class="headingSec">Section 3</h4>
+	<div id="para">
+		<p>hello world!A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116).
+			 Length and appearance do not determine whether a section in a paper is a paragraph.</p>
+	</div>
+</div>
+
+<script>
+	 $( function() {
+    		$( "#accordion" ).accordion({
+			collapsible:true,
+			active:false,
+			animate:200
+		});
+ 	 } );
+</script>
+<body>
+</html>

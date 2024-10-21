@@ -1,0 +1,11 @@
+body{
+	min-height:100vw;
+	background:#02bfc5;
+}
+.multiSelectBox{
+	width:250px;
+	margin:80px auto;
+}
+.multiSelectBox select{
+	width:100%;
+}

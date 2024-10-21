@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/nestedlist.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+.hide{
+	display:none;
+}
+</style>
+</head>
+<body>
+<h6>Nested List</h6>
+<ol id="list">
+	<ol id="list">
+		<li>first List
+			<ul class="next hide">
+				<li>sub 1</li>
+				<li>sub 2</li>
+			</ul>
+		</li>
+		<li>second List
+			<ul class="next hide">
+				<li>sub 3</li>
+				<li>sub 4</li>
+			</ul>
+		</li>
+	</ol>
+</ol>
+<script>
+	$('#list>li').click(function(){
+		$(this).find('ul.next').toggleClass('hide');
+
+	});
+</script>	
+</body>
+</html>
